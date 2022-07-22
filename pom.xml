@@ -10,13 +10,17 @@
 	</parent>
 	<groupId>com.demo</groupId>
 	<artifactId>multi-db-connection-spring-boot-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>multi-db-connection-spring-boot-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Multiple db connection with Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

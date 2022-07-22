@@ -1,6 +1,5 @@
-# Read Me First
-
-# Getting Started
+# About
+Demo project to show how to connect to multiple db belonging to different db architecture at once from spring boot.
 
 ### Reference Documentation
 For further reference, please consider the following sections:
