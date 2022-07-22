@@ -37,6 +37,7 @@ public class PersistenceDb2Configuration {
         HashMap<String, Object> properties = new HashMap<>();
         properties.put("hibernate.hbm2ddl.auto", env.getProperty("db2.jpa.hibernate.ddl-auto"));
         properties.put("hibernate.dialect", env.getProperty("db2.jpa.properties.hibernate.dialect"));
+        properties.put("hibernate.hbm2dll.create_namespaces", env.getProperty("db2.jpa.properties.javax.persistence.schema-generation.create-database-schemas"));
         em.setJpaPropertyMap(properties);
 
         return em;

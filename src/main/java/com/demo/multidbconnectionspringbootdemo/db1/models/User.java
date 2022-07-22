@@ -7,7 +7,7 @@ import lombok.experimental.Tolerate;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "db1", name = "user")
+@Table(schema="db1", name = "user")
 @Data
 @Builder
 public class User {

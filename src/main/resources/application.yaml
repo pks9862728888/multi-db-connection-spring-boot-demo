@@ -8,7 +8,7 @@ db1:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
   datasource:
     jdbcUrl: jdbc:mysql://localhost:3310/db1
     username: root
@@ -19,12 +19,16 @@ db2:
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+      javax:
+        persistence:
+          schema-generation:
+            create-database-schemas: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
   datasource:
-    jdbcUrl: jdbc:mysql://localhost:3311/db2
-    username: root
+    jdbcUrl: jdbc:postgresql://localhost:3311/db2?currentSchema=db2
+    username: postgres
     password: toor2
 
 logging:
